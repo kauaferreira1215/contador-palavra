@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contador de Palavras</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 265vh;
+            background-color: midnightblue;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        textarea {
+            width: 50%;
+            height: 90%;
+            margin-bottom: 10px;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            align-items: center;
+            width: 30%;
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            text-align: center;
+            list-style-position: inside;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            font-weight: bold;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+    <h1>CONTADOR DE PALAVRAS</h1>
+    <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+    <div class="container">
+        <br>
+        <br>
+        <textarea id="textArea" placeholder="Digite seu texto aqui..."></textarea>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="contarPalavras()">CONTAR PALAVRAS</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="resultado">Número de palavras: 0</p>
+    </div>
+    <br>
+    <br>
+    <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+    <section>
+        <div>
+            <h2>MEUS PROJETOS ANTERIORES</h2>
+            <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            </p>
+            <br>
+            <p>Clique na imgagem para ver meu projeto</p>
+            <a href="https://kauaferreira1215.github.io/calculadoradeimc/"><img
+                    src="Captura de tela 2023-12-21 235625.png" <br>
+                <p>DESCRIÇÃO:</p>
+                <p>A Calculadora de IMC é um projeto desenvolvido com o objetivo de fornecer uma ferramenta simples e
+                    eficaz
+                    para o cálculo do Índice de Massa Corporal, uma medida comumente utilizada para avaliar a saúde e o
+                    peso
+                    corporal de uma pessoa. Este projeto visa proporcionar uma abordagem fácil e acessível para que os
+                    usuários
+                    possam monitorar sua condição física de maneira rápida e informativa.</p>
+                <br>
+                <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                </p>
+                <br>
+                <p>Clique na imgagem para ver meu projeto</p>
+                <a href=" https://kauaferreira1215.github.io/meu-portifolio/"><img
+                        src="Captura de tela 2023-12-22 002037.png" </a>
+                    <br>
+                    <P>DESCRIÇÃO:</P>
+                    <p>Neste projeto, mergulhei na convergência de tecnologias, criando uma solução inovadora para
+                        pessoas
+                        interessadas no assunto. Através da combinação de tecnologias e maquinas, alcancei resultados ou
+                        conquistas
+                        específicas.
+                    </p>
+                    <br>
+                    <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                    </p>
+                    <br>
+                    <p>Clique na imagem para ver meu projeto</p>
+                    <a href="https://kauaferreira1215.github.io/commit-7/"><img src="Captura de tela 2023-12-22 004832.png" </a>
+                        <br>
+                        <p>DESCRIÇÃO:</p>
+                        <p>Este projeto tem como propósito oferecer uma jornada completa e acessível para aqueles que
+                            desejam se tornar programadores qualificados, utilizando exclusivamente recursos online
+                            gratuitos. A abordagem é estruturada em fases progressivas, começando pelos fundamentos da
+                            programação e avançando gradualmente para tópicos mais especializados.</p>
+                        <br>
+                        <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        </p>
+        </div>
+    </section>
+    <script>
+         function contarPalavras() {
+            var texto = document.getElementById('textArea').value.trim();
+            var numeroDePalavras = texto === '' ? 0 : texto.split(/\s+/).length;
+            document.getElementById('resultado').innerHTML = 'Número de palavras: ' + numeroDePalavras;
+        }
+    </script>
+    <footer>
+        <p>&copy;KAUÃ FERREIRA Todos os direitos reservados</p>
+    </footer
+
+    <script src="script.js"></script>
+    <css src="contador.css"></css>
+</body>
+
+</html>
